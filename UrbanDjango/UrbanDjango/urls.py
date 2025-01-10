@@ -18,6 +18,7 @@ from django.contrib import admin
 from django.urls import path
 from task2.views import func_template, ClassTemplate
 from task3.views import AutoShop, Service, SpareParts
+# from task4.views import AutoShop, Service, SpareParts
 
 urlpatterns = [
     path('admin/', admin.site.urls)

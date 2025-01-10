@@ -4,14 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b434edf5-08af-4376-ae18-fc10ba741a04" name="Changes" comment="Добавлены URL'ы и представления">
-      <change afterPath="$PROJECT_DIR$/UrbanDjango/templates/third_task/AutoShop_main.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UrbanDjango/templates/third_task/parts_price.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UrbanDjango/templates/third_task/service_price.html" afterDir="false" />
+    <list default="true" id="b434edf5-08af-4376-ae18-fc10ba741a04" name="Changes" comment="task3 - Базовые HTML тэги в шаблонах">
+      <change afterPath="$PROJECT_DIR$/UrbanDjango/templates/fourth_task/AutoShop_main.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/UrbanDjango/templates/fourth_task/menu.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/UrbanDjango/templates/fourth_task/parts_price.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/UrbanDjango/templates/fourth_task/service_price.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UrbanDjango/UrbanDjango/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/UrbanDjango/UrbanDjango/settings.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UrbanDjango/UrbanDjango/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/UrbanDjango/UrbanDjango/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UrbanDjango/templates/second_task/func_page.html" beforeDir="false" afterPath="$PROJECT_DIR$/UrbanDjango/templates/second_task/func_page.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UrbanDjango/task3/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/UrbanDjango/task3/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UrbanDjango/templates/third_task/parts_price.html" beforeDir="false" afterPath="$PROJECT_DIR$/UrbanDjango/templates/third_task/parts_price.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UrbanDjango/templates/third_task/service_price.html" beforeDir="false" afterPath="$PROJECT_DIR$/UrbanDjango/templates/third_task/service_price.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,9 +62,15 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/PyProjects/ProjectDjango/UrbanDjango/templates/fourth_task&quot;
   }
 }</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\PyProjects\ProjectDjango\UrbanDjango\templates\fourth_task" />
+    </key>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -94,11 +103,28 @@
       <option name="project" value="LOCAL" />
       <updated>1736361512595</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="task3 - Базовые HTML тэги в шаблонах">
+      <option name="closed" value="true" />
+      <created>1736533179281</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1736533179281</updated>
+    </task>
+    <task id="LOCAL-00004" summary="task3 - Базовые HTML тэги в шаблонах">
+      <option name="closed" value="true" />
+      <created>1736533298196</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1736533298196</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Добавлены URL'ы и представления" />
-    <option name="LAST_COMMIT_MESSAGE" value="Добавлены URL'ы и представления" />
+    <MESSAGE value="task3 - Базовые HTML тэги в шаблонах" />
+    <option name="LAST_COMMIT_MESSAGE" value="task3 - Базовые HTML тэги в шаблонах" />
   </component>
 </project>
