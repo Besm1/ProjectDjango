@@ -28,14 +28,15 @@ def sign_up_by_html(request):
         info['repeat_password'] = repeat_password
         info['age'] = age
 
+        info['error'] = ''
+
         if username in [u_.lower() for u_ in users.keys()]:
-            info['message'] = 'Имя пользователя занято. Попробуйте другое.'
-        elif repeat_password != password:
-            info['message'] = 'Пароли не совпадают. Попробуйте ещё раз.'
-        else:
+            info['error'] += 'Имя пользователя занято. Попробуйте другое. * '
+        if repeat_password != password:
+            info['error'] += 'Пароли не совпадают. Попробуйте ещё раз.'
+        if not info['error']:
             users[username] = (password, age)
-            info['message'] = f'Форма успешно отправлена. Приветствуем, {username}!'
-            return HttpResponse(content=info['message'])
+            return HttpResponse(content=f'Вы успешно зарегистрировались! Приветствуем, {username}!')
 
         return render(request,'registration_page.html',context = info)
 
@@ -43,6 +44,8 @@ def sign_up_by_html(request):
 
 def sign_up_by_django(request):
     global form
+
+    info = {}
     if request.method == 'POST':
         form = UserRegister(request.POST)
         if form.is_valid():
@@ -51,16 +54,15 @@ def sign_up_by_django(request):
             repeat_password = request.POST.get('repeat_password')
             age = request.POST.get('age')
 
-            info['form'] = form
+            info = {'form': form, 'error': ''}
 
             if username in [u_.lower() for u_ in users.keys()]:
-                info['message'] = 'Имя пользователя занято. Попробуйте другое.'
-            elif repeat_password != password:
-                info['message'] = 'Пароли не совпадают. Попробуйте ещё раз.'
-            else:
+                info['error'] += 'Имя пользователя занято. Попробуйте другое. * '
+            if repeat_password != password:
+                info['error'] += 'Пароли не совпадают. Попробуйте ещё раз.'
+            if not info['error']:
                 users[username] = (password, age)
-                info['message'] = f'Форма успешно отправлена. Приветствуем, {username}!'
-                return HttpResponse(content=info['message'])
+                return HttpResponse(content=f'Вы успешно зарегистрировались! Приветствуем, {username}!')
     else:
         form = UserRegister()
         info['form'] = form

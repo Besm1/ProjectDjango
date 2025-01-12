@@ -5,7 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b434edf5-08af-4376-ae18-fc10ba741a04" name="Changes" comment="task5 - Формы отправки данных. HTML и Django формы">
-      <change beforePath="$PROJECT_DIR$/UrbanDjango/templates/second_task/func_page.html" beforeDir="false" afterPath="$PROJECT_DIR$/UrbanDjango/templates/second_task/func_page.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UrbanDjango/task5/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/UrbanDjango/task5/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UrbanDjango/templates/fifth_task/registration_page.html" beforeDir="false" afterPath="$PROJECT_DIR$/UrbanDjango/templates/fifth_task/registration_page.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UrbanDjango/templates/fifth_task/registration_page_dj.html" beforeDir="false" afterPath="$PROJECT_DIR$/UrbanDjango/templates/fifth_task/registration_page_dj.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -158,7 +161,15 @@
       <option name="project" value="LOCAL" />
       <updated>1736713523935</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="task5 - Формы отправки данных. HTML и Django формы">
+      <option name="closed" value="true" />
+      <created>1736713725118</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1736713725118</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
