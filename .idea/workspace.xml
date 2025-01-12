@@ -4,15 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b434edf5-08af-4376-ae18-fc10ba741a04" name="Changes" comment="task3 - Базовые HTML тэги в шаблонах">
-      <change afterPath="$PROJECT_DIR$/UrbanDjango/static/style.css" afterDir="false" />
+    <list default="true" id="b434edf5-08af-4376-ae18-fc10ba741a04" name="Changes" comment="task4 - DTL. Теги, наследование">
+      <change afterPath="$PROJECT_DIR$/UrbanDjango/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/UrbanDjango/task5/forms.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/UrbanDjango/templates/fifth_task/registration_page.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/UrbanDjango/templates/fifth_task/registration_page_dj.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UrbanDjango/UrbanDjango/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/UrbanDjango/UrbanDjango/settings.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UrbanDjango/UrbanDjango/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/UrbanDjango/UrbanDjango/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UrbanDjango/templates/fourth_task/AutoShop_main.html" beforeDir="false" afterPath="$PROJECT_DIR$/UrbanDjango/templates/fourth_task/AutoShop_main.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UrbanDjango/templates/fourth_task/menu.html" beforeDir="false" afterPath="$PROJECT_DIR$/UrbanDjango/templates/fourth_task/menu.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UrbanDjango/templates/fourth_task/parts_price.html" beforeDir="false" afterPath="$PROJECT_DIR$/UrbanDjango/templates/fourth_task/parts_price.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UrbanDjango/templates/fourth_task/service_price.html" beforeDir="false" afterPath="$PROJECT_DIR$/UrbanDjango/templates/fourth_task/service_price.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UrbanDjango/templates/second_task/func_page.html" beforeDir="false" afterPath="$PROJECT_DIR$/UrbanDjango/templates/second_task/func_page.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,26 +58,29 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "DefaultHtmlFileTemplate": "HTML File",
-    "Python.test.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "task4",
-    "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "D:/PyProjects/ProjectDjango",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;Python.test.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;task4&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/PyProjects/ProjectDjango&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\PyProjects\ProjectDjango\UrbanDjango\templates\fourth_task" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\PyProjects\ProjectDjango\UrbanDjango\task5" />
     </key>
   </component>
   <component name="SharedIndexes">
@@ -138,7 +141,15 @@
       <option name="project" value="LOCAL" />
       <updated>1736537223463</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="task4 - DTL. Теги, наследование">
+      <option name="closed" value="true" />
+      <created>1736631667888</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1736631667888</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -158,6 +169,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Добавлены URL'ы и представления" />
     <MESSAGE value="task3 - Базовые HTML тэги в шаблонах" />
-    <option name="LAST_COMMIT_MESSAGE" value="task3 - Базовые HTML тэги в шаблонах" />
+    <MESSAGE value="task4 - DTL. Теги, наследование" />
+    <option name="LAST_COMMIT_MESSAGE" value="task4 - DTL. Теги, наследование" />
   </component>
 </project>
