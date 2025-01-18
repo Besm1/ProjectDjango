@@ -1,0 +1,117 @@
+Index: UrbanDjango/UrbanDjango/urls.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>\"\"\"\r\nURL configuration for UrbanDjango project.\r\n\r\nThe `urlpatterns` list routes URLs to views. For more information please see:\r\n    https://docs.djangoproject.com/en/5.1/topics/http/urls/\r\nExamples:\r\nFunction views\r\n    1. Add an import:  from my_app import views\r\n    2. Add a URL to urlpatterns:  path('', views.home, name='home')\r\nClass-based views\r\n    1. Add an import:  from other_app.views import Home\r\n    2. Add a URL to urlpatterns:  path('', Home.as_view(), name='home')\r\nIncluding another URLconf\r\n    1. Import the include() function: from django.urls import include, path\r\n    2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))\r\n\"\"\"\r\nfrom django.contrib import admin\r\nfrom django.urls import path\r\nfrom task2.views import func_template, ClassTemplate\r\n# from task3.views import AutoShop, Service, SpareParts\r\nfrom task4.views import AutoShop, Service, SpareParts\r\nfrom task5.views import sign_up_by_html, sign_up_by_django\r\n\r\nurlpatterns = [\r\n    path('admin/', admin.site.urls)\r\n    , path('', func_template)\r\n    , path('class/', ClassTemplate.as_view())\r\n    , path('autoshop/', AutoShop.as_view())\r\n    , path('autoshop/service/', Service.as_view())\r\n    , path('autoshop/parts/', SpareParts.as_view())\r\n    , path('sendhtml/',sign_up_by_html)\r\n    , path('senddj/',sign_up_by_django)\r\n]\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/UrbanDjango/UrbanDjango/urls.py b/UrbanDjango/UrbanDjango/urls.py
+--- a/UrbanDjango/UrbanDjango/urls.py	(revision 0f3c90b0e8c7449ca28b68253c0439ef7645ea9e)
++++ b/UrbanDjango/UrbanDjango/urls.py	(date 1737229252893)
+@@ -19,7 +19,7 @@
+ from task2.views import func_template, ClassTemplate
+ # from task3.views import AutoShop, Service, SpareParts
+ from task4.views import AutoShop, Service, SpareParts
+-from task5.views import sign_up_by_html, sign_up_by_django
++# from task5.views import sign_up_by_html, sign_up_by_django
+ 
+ urlpatterns = [
+     path('admin/', admin.site.urls)
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"AutoImportSettings\">\r\n    <option name=\"autoReloadType\" value=\"SELECTIVE\" />\r\n  </component>\r\n  <component name=\"ChangeListManager\">\r\n    <list default=\"true\" id=\"b434edf5-08af-4376-ae18-fc10ba741a04\" name=\"Changes\" comment=\"task3 - Базовые HTML тэги в шаблонах\">\r\n      <change afterPath=\"$PROJECT_DIR$/UrbanDjango/static/style.css\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/.idea/workspace.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/workspace.xml\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/UrbanDjango/UrbanDjango/settings.py\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/UrbanDjango/UrbanDjango/settings.py\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/UrbanDjango/UrbanDjango/urls.py\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/UrbanDjango/UrbanDjango/urls.py\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/UrbanDjango/templates/fourth_task/AutoShop_main.html\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/UrbanDjango/templates/fourth_task/AutoShop_main.html\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/UrbanDjango/templates/fourth_task/menu.html\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/UrbanDjango/templates/fourth_task/menu.html\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/UrbanDjango/templates/fourth_task/parts_price.html\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/UrbanDjango/templates/fourth_task/parts_price.html\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/UrbanDjango/templates/fourth_task/service_price.html\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/UrbanDjango/templates/fourth_task/service_price.html\" afterDir=\"false\" />\r\n    </list>\r\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\r\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\r\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\r\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\r\n  </component>\r\n  <component name=\"FileTemplateManagerImpl\">\r\n    <option name=\"RECENT_TEMPLATES\">\r\n      <list>\r\n        <option value=\"Python Script\" />\r\n        <option value=\"HTML File\" />\r\n      </list>\r\n    </option>\r\n  </component>\r\n  <component name=\"Git.Settings\">\r\n    <option name=\"RECENT_BRANCH_BY_REPOSITORY\">\r\n      <map>\r\n        <entry key=\"$PROJECT_DIR$\" value=\"master\" />\r\n      </map>\r\n    </option>\r\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\r\n  </component>\r\n  <component name=\"GitHubPullRequestSearchHistory\">{\r\n  &quot;lastFilter&quot;: {\r\n    &quot;state&quot;: &quot;OPEN&quot;,\r\n    &quot;assignee&quot;: &quot;Besm1&quot;\r\n  }\r\n}</component>\r\n  <component name=\"GithubPullRequestsUISettings\">{\r\n  &quot;selectedUrlAndAccountId&quot;: {\r\n    &quot;url&quot;: &quot;https://github.com/Besm1/ProjectDjango.git&quot;,\r\n    &quot;accountId&quot;: &quot;76fd621c-693f-4384-b27d-e9d7dd2e7dbf&quot;\r\n  }\r\n}</component>\r\n  <component name=\"ProjectColorInfo\">{\r\n  &quot;associatedIndex&quot;: 1\r\n}</component>\r\n  <component name=\"ProjectId\" id=\"2rLWPE335qUujVkGkwOZRHd86Fc\" />\r\n  <component name=\"ProjectLevelVcsManager\" settingsEditedManually=\"true\">\r\n    <ConfirmationsSetting value=\"2\" id=\"Add\" />\r\n  </component>\r\n  <component name=\"ProjectViewState\">\r\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\r\n    <option name=\"showLibraryContents\" value=\"true\" />\r\n  </component>\r\n  <component name=\"PropertiesComponent\"><![CDATA[{\r\n  \"keyToString\": {\r\n    \"DefaultHtmlFileTemplate\": \"HTML File\",\r\n    \"Python.test.executor\": \"Run\",\r\n    \"RunOnceActivity.ShowReadmeOnStart\": \"true\",\r\n    \"RunOnceActivity.git.unshallow\": \"true\",\r\n    \"git-widget-placeholder\": \"task4\",\r\n    \"ignore.virus.scanning.warn.message\": \"true\",\r\n    \"last_opened_file_path\": \"D:/PyProjects/ProjectDjango\",\r\n    \"node.js.detected.package.eslint\": \"true\",\r\n    \"node.js.detected.package.tslint\": \"true\",\r\n    \"node.js.selected.package.eslint\": \"(autodetect)\",\r\n    \"node.js.selected.package.tslint\": \"(autodetect)\",\r\n    \"nodejs_package_manager_path\": \"npm\",\r\n    \"vue.rearranger.settings.migration\": \"true\"\r\n  }\r\n}]]></component>\r\n  <component name=\"RecentsManager\">\r\n    <key name=\"CopyFile.RECENT_KEYS\">\r\n      <recent name=\"D:\\PyProjects\\ProjectDjango\\UrbanDjango\\templates\\fourth_task\" />\r\n    </key>\r\n  </component>\r\n  <component name=\"SharedIndexes\">\r\n    <attachedChunks>\r\n      <set>\r\n        <option value=\"bundled-python-sdk-fb887030ada0-aa17d162503b-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-243.21565.199\" />\r\n      </set>\r\n    </attachedChunks>\r\n  </component>\r\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\r\n  <component name=\"TaskManager\">\r\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\r\n      <changelist id=\"b434edf5-08af-4376-ae18-fc10ba741a04\" name=\"Changes\" comment=\"\" />\r\n      <created>1736338809717</created>\r\n      <option name=\"number\" value=\"Default\" />\r\n      <option name=\"presentableId\" value=\"Default\" />\r\n      <updated>1736338809717</updated>\r\n      <workItem from=\"1736624854285\" duration=\"152000\" />\r\n      <workItem from=\"1736625166524\" duration=\"499000\" />\r\n    </task>\r\n    <task id=\"LOCAL-00001\" summary=\"Добавлены URL'ы и представления\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1736361406621</created>\r\n      <option name=\"number\" value=\"00001\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00001\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1736361406621</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00002\" summary=\"Добавлены URL'ы и представления\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1736361512595</created>\r\n      <option name=\"number\" value=\"00002\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00002\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1736361512595</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00003\" summary=\"task3 - Базовые HTML тэги в шаблонах\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1736533179281</created>\r\n      <option name=\"number\" value=\"00003\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00003\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1736533179281</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00004\" summary=\"task3 - Базовые HTML тэги в шаблонах\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1736533298196</created>\r\n      <option name=\"number\" value=\"00004\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00004\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1736533298196</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00005\" summary=\"task3 - Базовые HTML тэги в шаблонах\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1736537223463</created>\r\n      <option name=\"number\" value=\"00005\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00005\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1736537223463</updated>\r\n    </task>\r\n    <option name=\"localTasksCounter\" value=\"6\" />\r\n    <servers />\r\n  </component>\r\n  <component name=\"TypeScriptGeneratedFilesManager\">\r\n    <option name=\"version\" value=\"3\" />\r\n  </component>\r\n  <component name=\"Vcs.Log.Tabs.Properties\">\r\n    <option name=\"TAB_STATES\">\r\n      <map>\r\n        <entry key=\"MAIN\">\r\n          <value>\r\n            <State />\r\n          </value>\r\n        </entry>\r\n      </map>\r\n    </option>\r\n  </component>\r\n  <component name=\"VcsManagerConfiguration\">\r\n    <MESSAGE value=\"Добавлены URL'ы и представления\" />\r\n    <MESSAGE value=\"task3 - Базовые HTML тэги в шаблонах\" />\r\n    <option name=\"LAST_COMMIT_MESSAGE\" value=\"task3 - Базовые HTML тэги в шаблонах\" />\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	(revision 0f3c90b0e8c7449ca28b68253c0439ef7645ea9e)
++++ b/.idea/workspace.xml	(date 1737229149561)
+@@ -4,15 +4,8 @@
+     <option name="autoReloadType" value="SELECTIVE" />
+   </component>
+   <component name="ChangeListManager">
+-    <list default="true" id="b434edf5-08af-4376-ae18-fc10ba741a04" name="Changes" comment="task3 - Базовые HTML тэги в шаблонах">
+-      <change afterPath="$PROJECT_DIR$/UrbanDjango/static/style.css" afterDir="false" />
++    <list default="true" id="b434edf5-08af-4376-ae18-fc10ba741a04" name="Changes" comment="task5 - Формы отправки данных. HTML и Django формы">
+       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/UrbanDjango/UrbanDjango/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/UrbanDjango/UrbanDjango/settings.py" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/UrbanDjango/UrbanDjango/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/UrbanDjango/UrbanDjango/urls.py" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/UrbanDjango/templates/fourth_task/AutoShop_main.html" beforeDir="false" afterPath="$PROJECT_DIR$/UrbanDjango/templates/fourth_task/AutoShop_main.html" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/UrbanDjango/templates/fourth_task/menu.html" beforeDir="false" afterPath="$PROJECT_DIR$/UrbanDjango/templates/fourth_task/menu.html" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/UrbanDjango/templates/fourth_task/parts_price.html" beforeDir="false" afterPath="$PROJECT_DIR$/UrbanDjango/templates/fourth_task/parts_price.html" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/UrbanDjango/templates/fourth_task/service_price.html" beforeDir="false" afterPath="$PROJECT_DIR$/UrbanDjango/templates/fourth_task/service_price.html" afterDir="false" />
+     </list>
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+@@ -30,7 +23,7 @@
+   <component name="Git.Settings">
+     <option name="RECENT_BRANCH_BY_REPOSITORY">
+       <map>
+-        <entry key="$PROJECT_DIR$" value="master" />
++        <entry key="$PROJECT_DIR$" value="task5" />
+       </map>
+     </option>
+     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+@@ -78,6 +71,9 @@
+   <component name="RecentsManager">
+     <key name="CopyFile.RECENT_KEYS">
+       <recent name="D:\PyProjects\ProjectDjango\UrbanDjango\templates\fourth_task" />
++    </key>
++    <key name="MoveFile.RECENT_KEYS">
++      <recent name="D:\PyProjects\ProjectDjango\UrbanDjango\task5" />
+     </key>
+   </component>
+   <component name="SharedIndexes">
+@@ -138,7 +134,39 @@
+       <option name="project" value="LOCAL" />
+       <updated>1736537223463</updated>
+     </task>
+-    <option name="localTasksCounter" value="6" />
++    <task id="LOCAL-00006" summary="task4 - DTL. Теги, наследование">
++      <option name="closed" value="true" />
++      <created>1736631667888</created>
++      <option name="number" value="00006" />
++      <option name="presentableId" value="LOCAL-00006" />
++      <option name="project" value="LOCAL" />
++      <updated>1736631667888</updated>
++    </task>
++    <task id="LOCAL-00007" summary="task4 - DTL. Теги, наследование">
++      <option name="closed" value="true" />
++      <created>1736713386987</created>
++      <option name="number" value="00007" />
++      <option name="presentableId" value="LOCAL-00007" />
++      <option name="project" value="LOCAL" />
++      <updated>1736713386987</updated>
++    </task>
++    <task id="LOCAL-00008" summary="task5 - Формы отправки данных. HTML и Django формы">
++      <option name="closed" value="true" />
++      <created>1736713523935</created>
++      <option name="number" value="00008" />
++      <option name="presentableId" value="LOCAL-00008" />
++      <option name="project" value="LOCAL" />
++      <updated>1736713523935</updated>
++    </task>
++    <task id="LOCAL-00009" summary="task5 - Формы отправки данных. HTML и Django формы">
++      <option name="closed" value="true" />
++      <created>1736713725118</created>
++      <option name="number" value="00009" />
++      <option name="presentableId" value="LOCAL-00009" />
++      <option name="project" value="LOCAL" />
++      <updated>1736713725118</updated>
++    </task>
++    <option name="localTasksCounter" value="10" />
+     <servers />
+   </component>
+   <component name="TypeScriptGeneratedFilesManager">
+@@ -158,6 +186,8 @@
+   <component name="VcsManagerConfiguration">
+     <MESSAGE value="Добавлены URL'ы и представления" />
+     <MESSAGE value="task3 - Базовые HTML тэги в шаблонах" />
+-    <option name="LAST_COMMIT_MESSAGE" value="task3 - Базовые HTML тэги в шаблонах" />
++    <MESSAGE value="task4 - DTL. Теги, наследование" />
++    <MESSAGE value="task5 - Формы отправки данных. HTML и Django формы" />
++    <option name="LAST_COMMIT_MESSAGE" value="task5 - Формы отправки данных. HTML и Django формы" />
+   </component>
+ </project>
+\ No newline at end of file

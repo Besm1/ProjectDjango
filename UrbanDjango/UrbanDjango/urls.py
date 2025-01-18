@@ -19,7 +19,7 @@ from django.urls import path
 from task2.views import func_template, ClassTemplate
 # from task3.views import AutoShop, Service, SpareParts
 from task4.views import AutoShop, Service, SpareParts
-from task5.views import sign_up_by_html, sign_up_by_django
+# from task5.views import sign_up_by_html, sign_up_by_django
 
 urlpatterns = [
     path('admin/', admin.site.urls)
@@ -28,6 +28,6 @@ urlpatterns = [
     , path('autoshop/', AutoShop.as_view())
     , path('autoshop/service/', Service.as_view())
     , path('autoshop/parts/', SpareParts.as_view())
-    , path('sendhtml/',sign_up_by_html)
-    , path('senddj/',sign_up_by_django)
+    # , path('sendhtml/',sign_up_by_html)
+    # , path('senddj/',sign_up_by_django)
 ]
